@@ -10,7 +10,7 @@
 
 void Test::runTests()
 {
-  
+
   testConstructor();
   testDestructor();
   testEmpty();

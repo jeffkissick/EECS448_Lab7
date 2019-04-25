@@ -1,0 +1,157 @@
+Bugs List:
+
+1. isEmpty() returns true for any list. Even if there is an item in the list.
+   My test for this is called testIsNotEmpty().
+
+2. addBack() doesn't function as it should.  Instead of adding to the back of the list,
+   this simply adds to the front of the list.  I tested this for both a single and multiple  
+   values.  My tests for this are called testAddBackSingle() and testAddBackMultiple().
+
+3. removeFront() doesn't function as it should in many ways.  Firstly, it doesn't remove    
+   anything.  Secondly, it doesn't return true when it should remove an item from the list.  
+   As it doesn't remove anything I assume this behavior makes sense.
+   My tests for these are called testRemoveFrontSingle(), testRemoveFrontMultiple(), 
+   testRemoveFrontReturnsTrueWithNonEmptyList().
+
+4. removeBack() also doesn't function as it should in many ways.  In fact, its identical to 
+   removeFront() in that it doesn't work at all.  It removes nothing and thus returns false 
+   always.  My tests for these are called testRemoveBackSingle(), testRemoveBackMultiple(), 
+   and testRemoveBackReturnsTrueWithNonEmptyList().
+
+5. The destructor doesn't destruct the linked list.  This one I'm not positive about as I 
+   didn't think the way I was going about it would work but a geek for geeks page aparently 
+   tells me I can go about it the way I did.  My test for this is testDestructor().
+
+
+
+Output:
+
+A LinkedListOfInts is being constructed as an empty list: True
+The destructor does not work!
+A LinkedListOfInts is being properly destructed: False
+An Empty List passes an isEmpty Check: True
+addFront() adds a single int to the list: True
+addFront() adds multiple ints in the front of the list: True
+and the item at the front of this list is: 100
+A Non-empty List fails an isEmpty Check: False
+Added 1 values to the list and the size is currently: 1
+Added 2 values to the list and the size is currently: 2
+Added 3 values to the list and the size is currently: 3
+Added 4 values to the list and the size is currently: 4
+Added 5 values to the list and the size is currently: 5
+Added 6 values to the list and the size is currently: 6
+Added 7 values to the list and the size is currently: 7
+Added 8 values to the list and the size is currently: 8
+Added 9 values to the list and the size is currently: 9
+Added 10 values to the list and the size is currently: 10
+Added 11 values to the list and the size is currently: 11
+Added 12 values to the list and the size is currently: 12
+Added 13 values to the list and the size is currently: 13
+Added 14 values to the list and the size is currently: 14
+Added 15 values to the list and the size is currently: 15
+Added 16 values to the list and the size is currently: 16
+Added 17 values to the list and the size is currently: 17
+Added 18 values to the list and the size is currently: 18
+Added 19 values to the list and the size is currently: 19
+Added 20 values to the list and the size is currently: 20
+Added 21 values to the list and the size is currently: 21
+Added 22 values to the list and the size is currently: 22
+Added 23 values to the list and the size is currently: 23
+Added 24 values to the list and the size is currently: 24
+Added 25 values to the list and the size is currently: 25
+Added 26 values to the list and the size is currently: 26
+Added 27 values to the list and the size is currently: 27
+Added 28 values to the list and the size is currently: 28
+Added 29 values to the list and the size is currently: 29
+Added 30 values to the list and the size is currently: 30
+Added 31 values to the list and the size is currently: 31
+Added 32 values to the list and the size is currently: 32
+Added 33 values to the list and the size is currently: 33
+Added 34 values to the list and the size is currently: 34
+Added 35 values to the list and the size is currently: 35
+Added 36 values to the list and the size is currently: 36
+Added 37 values to the list and the size is currently: 37
+Added 38 values to the list and the size is currently: 38
+Added 39 values to the list and the size is currently: 39
+Added 40 values to the list and the size is currently: 40
+Added 41 values to the list and the size is currently: 41
+Added 42 values to the list and the size is currently: 42
+Added 43 values to the list and the size is currently: 43
+Added 44 values to the list and the size is currently: 44
+Added 45 values to the list and the size is currently: 45
+Added 46 values to the list and the size is currently: 46
+Added 47 values to the list and the size is currently: 47
+Added 48 values to the list and the size is currently: 48
+Added 49 values to the list and the size is currently: 49
+Added 50 values to the list and the size is currently: 50
+Added 51 values to the list and the size is currently: 51
+Added 52 values to the list and the size is currently: 52
+Added 53 values to the list and the size is currently: 53
+Added 54 values to the list and the size is currently: 54
+Added 55 values to the list and the size is currently: 55
+Added 56 values to the list and the size is currently: 56
+Added 57 values to the list and the size is currently: 57
+Added 58 values to the list and the size is currently: 58
+Added 59 values to the list and the size is currently: 59
+Added 60 values to the list and the size is currently: 60
+Added 61 values to the list and the size is currently: 61
+Added 62 values to the list and the size is currently: 62
+Added 63 values to the list and the size is currently: 63
+Added 64 values to the list and the size is currently: 64
+Added 65 values to the list and the size is currently: 65
+Added 66 values to the list and the size is currently: 66
+Added 67 values to the list and the size is currently: 67
+Added 68 values to the list and the size is currently: 68
+Added 69 values to the list and the size is currently: 69
+Added 70 values to the list and the size is currently: 70
+Added 71 values to the list and the size is currently: 71
+Added 72 values to the list and the size is currently: 72
+Added 73 values to the list and the size is currently: 73
+Added 74 values to the list and the size is currently: 74
+Added 75 values to the list and the size is currently: 75
+Added 76 values to the list and the size is currently: 76
+Added 77 values to the list and the size is currently: 77
+Added 78 values to the list and the size is currently: 78
+Added 79 values to the list and the size is currently: 79
+Added 80 values to the list and the size is currently: 80
+Added 81 values to the list and the size is currently: 81
+Added 82 values to the list and the size is currently: 82
+Added 83 values to the list and the size is currently: 83
+Added 84 values to the list and the size is currently: 84
+Added 85 values to the list and the size is currently: 85
+Added 86 values to the list and the size is currently: 86
+Added 87 values to the list and the size is currently: 87
+Added 88 values to the list and the size is currently: 88
+Added 89 values to the list and the size is currently: 89
+Added 90 values to the list and the size is currently: 90
+Added 91 values to the list and the size is currently: 91
+Added 92 values to the list and the size is currently: 92
+Added 93 values to the list and the size is currently: 93
+Added 94 values to the list and the size is currently: 94
+Added 95 values to the list and the size is currently: 95
+Added 96 values to the list and the size is currently: 96
+Added 97 values to the list and the size is currently: 97
+Added 98 values to the list and the size is currently: 98
+Added 99 values to the list and the size is currently: 99
+Added 100 values to the list and the size is currently: 100
+A list of 100 items has a size of 100: True
+Search has found 1, 50, 80, and 100 in the list: True
+Search found no values in an empty list: True
+addBack() adds a single int to the list: True
+addBack() adds multiple ints in the back of the list: False
+and the item in this list at the back is: 1
+removeFront() returns false for an empty list: True
+removeFront() does remove the item in a one item list: False
+The size of the list is now: 1. The size should be 0.
+removeFront() removes multiple ints in the front of the list: False
+and the item in this list at the front is: 100. The list size is now: 100.  It should be size 50.
+removeFront() returns true when removing an item with a non-empty list: False
+removeFront() returns false for an empty list: True
+removeBack() does remove the item in a one item list: False
+The size of the list is now: 1. The size should be 0.
+removeBack() removes multiple ints in the front of the list: False
+and the item in this list at the back is: 1. The list size is now: 100.  It should be size 50.
+removeBack() returns true when removing an item with a non-empty list: False
+Running...
+And we're done.
+Goodbye.
